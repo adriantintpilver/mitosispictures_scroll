@@ -24,4 +24,4 @@ jobs:
           npm install .
           npm install n-readlines fs path
           node build
-          node build_profile
+          node build_profiles
