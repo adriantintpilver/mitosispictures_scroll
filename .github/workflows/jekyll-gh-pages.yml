@@ -22,5 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           npm install .
+          npm install n-readlines fs path
           node build
           node build_profile
