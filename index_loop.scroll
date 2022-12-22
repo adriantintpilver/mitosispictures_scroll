@@ -1,0 +1,11 @@
+                <!-- Loop for each -->
+                <div class="card m-card mb-4 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="<profile_link>">
+                        <img src="<profile_image>" class="card-img-top border-25 soft-shadow" alt="<profile_title>">
+                    </a>
+                    <div onclick="location.href='<profile_link>';" class="mt-2" style="cursor:pointer">
+                        <p class="image-title mb-0"><profile_title></p>
+                        Be <a class="image-copyright" href="<profile_copy_link>"><profile_copy_name></a>
+                    </div>
+                </div>
+                <!-- End Loop for each -->
