@@ -66,4 +66,14 @@ fs.readdir(directoryPath, function (err, files) {
           });
     });
 });
-
+const directorypagesPath = path.join(__dirname, 'pages');
+console.log("check wrote files in |"+directorypagesPath+"| folder ")
+fs.readdir(directorypagesPath, function (err, files) {
+  //handling error
+  if (err) {
+      return console.log('Unable to scan directory: ' + err);
+  } 
+  files.forEach(function (file) {
+      console.log(file);
+  });
+});
