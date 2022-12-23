@@ -25,19 +25,20 @@ The site is static and generated with NodeJs by the build.js processes (generate
 For run this on your local enviroment, these are the instructions:
 
 
-1- Go to the command line in the folder where you have the downloaded project. For example c:/mitosispictures_scroll
-2- install packages with npm
+Go to the command line in the folder where you have the downloaded project. For example c:/mitosispictures_scroll
+```bash
+1- install packages with npm
 ```bash
           npm install .
-3- install npm dependencies
+2- install npm dependencies
 ```bash
           npm install . n-readlines fs path
 ```
-4- Build the index home page
+3- Build the index home page
 ```bash
           node build
 ```
-5- Build the profiles pages
+4- Build the profiles pages
 ```bash
           node build_profiles
 ```
