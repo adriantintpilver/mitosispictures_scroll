@@ -58,7 +58,7 @@ fs.readdir(directoryPath, function (err, files) {
             var result = result.replace(/<profile_copy_name>/g, profile_copy_name);
             var result = result.replace(/<profile_image>/g, profile_image);
             var result = result.replace(/<profile_description>/g, profile_description);
-           console.log(file.split(".")[0])
+           //console.log(file.split(".")[0])
            
             fs.writeFile('pages/'+file.split(".")[0]+'.html', result, 'utf8', function (err) {
                if (err) return console.log(err);
