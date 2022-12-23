@@ -1,6 +1,6 @@
 # mitosispictures_scroll
 
-mitosispictures_scroll is a website that displays data from the https://cancerdb.com public database that contains data on all cancer treatments and related entities.
+mitosispictures_scroll is a website that displays data from the https://www.cancerdb.com public database that contains data on all cancer treatments and related entities.
 
 Someone's new treatment could be just 2 ideas away from being the next big cure. CancerDB can help you discover what those 2 missing pieces of knowledge are.
 
