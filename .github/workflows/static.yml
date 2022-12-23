@@ -44,7 +44,7 @@ jobs:
           node build
           node build_profiles
       - name: Commit files # transfer the new html files back into the repository
-        run: git config --local adriantintpilver ${{ github.actor }}
+        run: 
              git config --global user.email "adriantintpilver@gmail.com"
              git config --global user.name "adriantintpilver"
              git add ./docs
