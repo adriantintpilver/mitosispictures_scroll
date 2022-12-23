@@ -12,7 +12,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -45,7 +45,7 @@ jobs:
       - name: Archive code index
         uses: actions/upload-artifact@v3
         with:
-          name: uplodad index.html
+          name: upload index.html
           path: index.html
       - run: |   
           node build_profiles
@@ -55,7 +55,7 @@ jobs:
           name: dist-without-markdown
           path: |
             pages
-#           !dist/**/*.html
+            pages/**/*.html
 #       - name: Commit files # transfer the new html files back into the repository
 #         run: git config --global user.email "adriantintpilver@gmail.com"
 #              git config --global user.name "adriantintpilver"
