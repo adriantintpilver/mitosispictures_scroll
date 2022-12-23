@@ -25,7 +25,7 @@ The site is static and generated with NodeJs by the build.js processes (generate
 For run this on your local enviroment, these are the instructions:
 
 
-Go to the command line in the folder where you have the downloaded project. For example c:/mitosispictures_scroll
+Go to the command line in the folder where you have the downloaded project. For example c:/mitosispictures_scroll 
 
 1- install packages with npm
 ```bash
