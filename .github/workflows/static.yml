@@ -33,11 +33,13 @@ jobs:
         node-version: [16.17.1]
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: npm install and build
       - run: |
           npm install .
           npm install n-readlines fs path
@@ -47,6 +49,7 @@ jobs:
         with:
           name: upload index.html
           path: index.html
+      - name: npm build_profile
       - run: |   
           node build_profiles
       - name: Archive production artifacts profiles pages
