@@ -34,7 +34,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -45,7 +45,7 @@ jobs:
           npm install n-readlines fs path
           node build
       - name: Archive code index
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
         with:
           name: upload index.html
           path: index.html
@@ -53,7 +53,7 @@ jobs:
       - run: |   
           node build_profiles
       - name: Archive production artifacts profiles pages
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
         with:
           name: dist-without-markdown
           path: |
