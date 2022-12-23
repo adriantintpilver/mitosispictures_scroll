@@ -26,10 +26,11 @@ For run this on your local enviroment, these are the instructions:
 
 
 Go to the command line in the folder where you have the downloaded project. For example c:/mitosispictures_scroll
-```bash
+
 1- install packages with npm
 ```bash
           npm install .
+```
 2- install npm dependencies
 ```bash
           npm install . n-readlines fs path
