@@ -42,7 +42,20 @@ jobs:
           npm install .
           npm install n-readlines fs path
           node build
+      - name: Archive code index
+        uses: actions/upload-artifact@v3
+        with:
+          name: uplodad index.html
+          path: index.html
+      - run: |   
           node build_profiles
+      - name: Archive production artifacts profiles pages
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-without-markdown
+          path: |
+            pages
+#           !dist/**/*.html
 #       - name: Commit files # transfer the new html files back into the repository
 #         run: git config --global user.email "adriantintpilver@gmail.com"
 #              git config --global user.name "adriantintpilver"
