@@ -44,8 +44,7 @@ jobs:
           node build
           node build_profiles
       - name: Commit files # transfer the new html files back into the repository
-        run: 
-             git config --global user.email "adriantintpilver@gmail.com"
+        run: git config --global user.email "adriantintpilver@gmail.com"
              git config --global user.name "adriantintpilver"
              git add ./docs
              git commit -m "Updating the repository GitHub html pages in the docs folder"
