@@ -1,8 +1,6 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
-git config --global user.email "adriantintpilver@gmail.com"
-
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -44,6 +42,9 @@ jobs:
           npm install n-readlines fs path
           node build
           node build_profiles
+      - uses: actions/checkout@v1
+      - name: switching from HTTPS to SSH
+        run: git remote set-url origin ${{ secrets.ssh }}
       - name: check for changes
         run: git status
       - name: stage changed files
